@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    }
+    body{
+        background-color: aqua;
+        font-family:"calibri";
+    }
+    header{
+background-color: antiquewhite;
+width: 100%;     
+clear: both;
+content:"" ;
+display: table; 
+    }
+.menu{
+    width: 900px;
+    margin: 0 auto;
+}
+ing{
+    width: 128px;
+    height: 50%;
+    float: left;
+    padding: 8%;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 75px;
+    padding: 12px 0;
+    float: left;
+    position:relative;
+}
+nav  ul li a{
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bold;
+ 
+} 
+nav ul li a ::before{
+    display:block;
+    content:"";
+    width: 0%;
+    background:#444;
+    height: 5px;
+    top:0;
+    position: absolute;
+    transition:width 0.2s;
+ 
+}
+nav ul li a:hover{
+    width:100%;
+ background: rgb(196, 231, 193);
+}
